@@ -20,4 +20,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', 'cvk_blog.views.index'),
+    url(r'^(?P<slug>[\w\-]+)/$', 'cvk_blog.views.post'),
 )
