@@ -1,5 +1,7 @@
-body {
-  font-family: Futura, Arial, sans-serif; 
+/***HEADER MODIFICATION FOR BLOG***/
+header#header {
+  display: block;
+  position: relative;
 }
 
 .content {
