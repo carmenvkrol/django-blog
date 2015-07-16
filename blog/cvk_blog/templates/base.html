@@ -32,14 +32,14 @@
       </div>
     </header>
     <!--END HEADER-->
-    <div class="content">
+    <div id="blog">
       {% block content %}
       {% endblock %}
+      {% load disqus_tags %}
+      {% disqus_dev %}
+      {% load disqus_tags %}
+      {% disqus_show_comments %}
     </div>
-    {% load disqus_tags %}
-    {% disqus_dev %}
-    {% load disqus_tags %}
-    {% disqus_show_comments %}
     <!--FOOTER-->
     <footer id="footer">
       <div class="container-fluid">
