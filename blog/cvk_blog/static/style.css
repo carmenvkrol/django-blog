@@ -15,6 +15,25 @@ header#header {
   text-align: center;
 }
 
+.blog-post-container {
+  margin-top: 50px;
+}
+
+.blog-post {
+  display: inline-block;
+  margin-right: 5%;
+  border: 1px solid #323232;
+  width: 29%;
+}
+
+.blog-post:nth-child(3n) {
+  margin-right: 0;
+}
+
+.blog-post h2 {
+  text-align: center;
+}
+
 .blog-description {
   margin-top: 50px;
   margin-bottom: 50px;
