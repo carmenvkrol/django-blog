@@ -26,11 +26,14 @@ article h1 {
 
 article pre {
   margin-bottom: 30px;
+  font-size: 1.0rem;
+  font-size: 13px;
 }
 
 article p {
   margin-bottom: 30px;
   line-height: 1.5;
+  font-size: 1.3rem;
   font-size: 18px;
 }
 
