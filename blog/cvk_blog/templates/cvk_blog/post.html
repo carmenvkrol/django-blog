@@ -8,9 +8,9 @@
   <header>
     <h1>{{post.title}}</h1>
   </header>
-  <p class="blog-description">
-    {{post.description}}
-  </p>
+  <div class="top-img-container">
+    {{post.description|safe}}
+  </div>
   <p class="blog-text">
     {{post.content|markdown}}
   </p>
