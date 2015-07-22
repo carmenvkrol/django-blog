@@ -12,9 +12,7 @@
           <div class="thumbnail-container">{{post.description|safe}}</div>
           <div class="blog-detail-container">
             <h2>
-              <a href="{{post.get_absolute_url}}">
-                {{post.title}}
-              </a>
+              {{post.title}}
             </h2>
             <p>
               <time datetime="{{post.created|date:"c"}}">

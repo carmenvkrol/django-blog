@@ -54,7 +54,7 @@ article .top-img-container img {
 }
 
 .blog-post-container {
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
   max-width: 819px;
 }
 
@@ -63,6 +63,7 @@ article .top-img-container img {
   display: inline-block;
   vertical-align: top;
   margin-right: 30px;
+  margin-top: 30px;
   width: 250px;
 }
 
@@ -86,7 +87,7 @@ article .top-img-container img {
   cursor: pointer;
 }
 
-.blog-post-wrapper:nth-child(3n) {
+.blog-post-container a:nth-child(3n) .blog-post-wrapper {
   margin-right: 0;
 }
 
@@ -95,14 +96,11 @@ article .top-img-container img {
   padding-top: 15px;
   text-align: center;
   font-size: 24px;
-}
-
-.blog-post h2 a {
   color: #000000;
 }
 
-.blog-post h2 a:hover {
-  color: #FFFFFF;
+.blog-post p {
+  color: #000000;
 }
 
 .blog-post .thumbnail-container img {
