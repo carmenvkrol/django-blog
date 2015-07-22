@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/pictonic/css/pictonic.css">
     <link rel="stylesheet" type="text/css" href="../static/main.css">
     <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body>
@@ -18,13 +19,13 @@
     <header id="header">
      <div class="container-fluid">
         <div class="headerName">
-          <h1>Carmen V. Krol</h1>
+          <h1><a href="http://www.carmenvkrol.com">Carmen V. Krol</a></h1>
         </div>
         <div class="header">
           <nav class="navbar navbar-default" role="navigation">
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
               <ul class="light-blue nav nav-pills pull-right">
-                <li><a id="blog-link" href="#">BLOG</a></li>
+                <li><a id="blog-link" href="/">BLOG</a></li>
                 <li><a id="portfolio-link" href="#">PORTFOLIO</a></li>
                 <li><a id="about-link" href="#">ABOUT</a></li>
               </ul>
@@ -89,6 +90,13 @@
       </div>
     </footer>
   <!--END FOOTER-->
+  <script>
+    $(document).ready(function(){
+      $('.blog-post').hover(function(){
+        $(this).show();
+      });
+    });
+  </script>
   </body>
 
 </html>
