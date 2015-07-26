@@ -1,0 +1,29 @@
+.section {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  @media (max-width: 1000px) {
+    position: relative;
+    height: auto;
+  }
+}
+
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.max-width-1000 {
+  @media (max-width: 1000px) {
+    position: relative;
+    top: inherit;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

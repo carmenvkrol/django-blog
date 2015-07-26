@@ -40,10 +40,13 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'cvk_blog',
     'disqus',
+    'markdown_deux'
 )
 
 DISQUS_API_KEY = 'hkGkeQ15yiAb82m24PtCAls0jlCZmQFLFm5wM51tUaKPQ3gv3MNPHBBnOp0VZZ3D'
 DISQUS_WEBSITE_SHORTNAME = 'blog'
+
+STATIC_URL = '/static/'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

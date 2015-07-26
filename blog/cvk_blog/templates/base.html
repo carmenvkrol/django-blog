@@ -3,19 +3,92 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {% block title %}{% endblock %}
+      Carmen V. Krol - {% block title %}{% endblock %}
     </title>
+    <meta name="viewport" content="width=device-width">
+    <link href="../static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/pictonic/css/pictonic.css">
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
   </head>
 
   <body>
-    <div class="content">
+    <!--HEADER-->
+    <header id="header">
+     <div class="container-fluid">
+        <div class="headerName">
+          <h1><a href="http://www.carmenvkrol.com">Carmen V. Krol</a></h1>
+        </div>
+        <div class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+              <ul class="light-blue nav nav-pills pull-right">
+                <li><a id="blog-link" href="/">BLOG</a></li>
+                <li><a id="portfolio-link" href="#">PORTFOLIO</a></li>
+                <li><a id="about-link" href="#">ABOUT</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--END HEADER-->
+    <div id="blog">
       {% block content %}
       {% endblock %}
+      {% load disqus_tags %}
+      {% disqus_dev %}
+      {% load disqus_tags %}
+      {% disqus_show_comments %}
     </div>
-    {% load disqus_tags %}
-    {% disqus_dev %}
-    {% load disqus_tags %}
-    {% disqus_show_comments %}
+    <!--FOOTER-->
+    <footer id="footer" class="blog-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <div class="social-media-container">
+              <ul>
+                <li>
+                  <a href="https://github.com/carmenvkrol">
+                    <span class="icon-github-01"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/CarmenVKrol">
+                    <span class="icon-twitter-3"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/carmenvkrol">
+                    <span class="icon-linkedin"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:carmenvkrol@gmail.com">
+                    <span class="icon-mail"><span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+           <div class="col-md-4">
+          </div>
+           <div class="col-md-4">
+            <p>Copyright &copy; 2015 Carmen V. Krol</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!--END FOOTER-->
   </body>
 
 </html>

@@ -1,0 +1,58 @@
+footer {
+  .max-width-1000;
+  position: absolute;
+  top: 650vh;
+  width: 100%;
+  background: url('images/footer-background.jpg');
+  @media (max-width: 1000px) {
+    position: absolute;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    background: @dark-grey;
+  }
+
+  h1 {
+    .code-font;
+    color: #fff;
+  }
+
+  .social-media-container {
+
+    ul {
+      margin: 25px auto 0 auto;
+      width: 255px;
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .icon-github-01, .icon-twitter-3, .icon-linkedin, .icon-mail{
+          font-size: 30rem;
+          font-size: 30px;
+          color: #fff;
+          &:hover {
+            color: @light-blue;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  p {
+    margin-bottom: 5px;
+    text-align: right;
+    .code-font;
+    color: #fff;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+}

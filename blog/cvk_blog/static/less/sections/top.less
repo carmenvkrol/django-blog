@@ -1,0 +1,146 @@
+#top {
+  .section;
+  position: relative;
+  top: 0;
+  padding-top: 2vh;
+  background: url('images/main-image-background.jpg');
+  @media (max-width: 768px) {
+    background: @dark-grey;
+  }
+
+  .social-media-container {
+
+    ul {
+      position: absolute;
+      list-style-type: none;
+      @media (max-width: 1000px) {
+        position: relative;
+      }
+      @media (max-width: 768px) {
+        margin: 10px auto 0 auto;
+        padding-left: 0;
+        width: 235px;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .icon-github-01, .icon-twitter-3, .icon-linkedin, .icon-mail{
+          font-size: 24rem;
+          font-size: 24px;
+          color: #fff;
+          &:hover {
+            color: @light-blue;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .top-text-container {
+    .code-font;
+    .max-width-1000;
+    position: absolute;
+    top: 10vh;
+    height: 70vh;
+    @media (max-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+
+    .top-text {
+      .vertical-align;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      max-width: 600px;
+      width: 50%;
+      @media (max-width: 768px) {
+        width: auto;
+      }
+
+      h1 {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 72rem;
+        font-size: 72px;
+        color: #fff;
+      }
+
+      p {
+        text-align: center;
+        font-size: 24rem;
+        font-size: 24px;
+        color: @light-blue;
+      }
+
+    }
+
+  }
+
+  ul.credential-list {
+    .max-width-1000;
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 20vh;
+    width: 680px;
+    list-style-type: none;
+    padding-left: 0;
+    @media screen and (max-width: 768px) {
+      width: 175px;
+      height: inherit;
+    }
+
+    li {
+      display: inline-block;
+      margin-left: 15px;
+      margin-right: 15px;
+      @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+
+      span {
+        margin-bottom: 5px;
+        @media (max-width: 768px) {
+          display: inline-block;
+        }
+      }
+
+      .icon-html5-02, .icon-css3-02, .icon-prog-js02, .icon-prog-jquery, .icon-angularjs {
+        font-size: 48rem;
+        font-size: 48px;
+        color: @light-blue;
+        @media (max-width: 768px) {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+      }
+
+      p {
+        text-align: center;
+        color: #fff;
+        @media (max-width: 768px) {
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+      }
+
+    }
+
+  }
+
+}

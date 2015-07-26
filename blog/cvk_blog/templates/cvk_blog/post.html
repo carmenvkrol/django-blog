@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown_deux_tags %}
 
 {% block title %}{{post.title}}{% endblock %}
 
@@ -6,16 +7,18 @@
 <article>
   <header>
     <h1>{{post.title}}</h1>
-    <p>
-      Posted on
-      <time datetime="{{post.created|date:"c"}}">
-        {{post.created|date}}
-      </time>
-    </p>
   </header>
-  <p class="description">
-    {{post.description}}
+  <div class="top-img-container">
+    {{post.description|safe}}
+  </div>
+  <p class="blog-text">
+    {{post.content|markdown}}
   </p>
-  {{post.content|safe}}
+  <p class="time-stamp">
+    posted on
+    <time datetime="{{post.created|date:"c"}}">
+      {{post.created|date}}
+    </time>
+  </p>
 </article>
 {% endblock %}
