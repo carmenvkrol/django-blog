@@ -30,5 +30,4 @@ requests==2.6.0
 rsa==3.1.4
 six==1.9.0
 static3==0.6.1
-vboxapi==1.0
 virtualenv==12.1.1
