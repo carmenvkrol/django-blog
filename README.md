@@ -1,7 +1,7 @@
 Blog built with Django
 =============
 
-Responsive blog web app built with [Django](https://www.djangoproject.com/) and [PostgresSQL](http://www.postgresql.org/).
+Responsive blog web app built with [Django](https://www.djangoproject.com/) and [PostgreSQL](http://www.postgresql.org/).
 
 Through the Django admin interface, the user can create blog entries, which include commenting functionality from [Disqus](https://disqus.com/). 
 
